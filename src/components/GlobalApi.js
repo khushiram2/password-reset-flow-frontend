@@ -1,1 +1,1 @@
-export const Api="http://localhost:7900/user"
+export const Api="https://password-reset-flow-backend-hn3e.onrender.com/user"
