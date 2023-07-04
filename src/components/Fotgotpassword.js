@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import axios from "axios"
 import { Api } from './GlobalApi'
+
+
+
 export const Forgotpassword = () => {
   const [email,setEmail]=useState("")
   const handleChange=(e)=>{
