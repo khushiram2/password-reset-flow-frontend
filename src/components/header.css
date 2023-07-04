@@ -1,0 +1,13 @@
+.navbar{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(22, 29, 87);
+    width: calc(100%-20px);
+    height: 64px;
+    padding: 5px 10px;
+    color: azure;
+  }
+.navbar > div {
+    margin-left: auto;
+}

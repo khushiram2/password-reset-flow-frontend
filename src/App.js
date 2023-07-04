@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { Header } from './components/Header';
+import { Loginpage } from './components/Loginpage';
+import { Navigate, Route, Routes } from 'react-router-dom';
+import { Registerpage } from './components/Registerpage';
+import {Forgotpassword} from './components/Fotgotpassword'
+import {Dashboard} from "./components/Dashboard"
+import { InValidUser } from './components/InValidUser';
+import { Passwordreset } from './components/Passwordreset';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <Routes>
+       <Route path='/' element={<Navigate replace to="/login"/>}/>
+      <Route path='/login' element={<Loginpage/>}/>
+      <Route path='/register' element={<Registerpage/>}/>
+      <Route path='/forgotpassword' element={<Forgotpassword/>}/>
+      <Route path='/reset/:id/:token' element={<Passwordreset/>}/>
+      <Route path='/dashboard' element={<Dashboard/>}/>
+      <Route path='/invaliduser' element={<InValidUser/>}/>
+      </Routes>
     </div>
   );
 }
