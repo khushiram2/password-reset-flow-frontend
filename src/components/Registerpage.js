@@ -63,7 +63,7 @@ export const Registerpage = () => {
                     <input onChange={(e) => handlechange(e)} type='password' className='form-input' name='confirmPassword' />
                     <button onClick={() => handleSubmit()} className='btn'>submit</button>
                     <div className='sorR' style={{ marginTop: "10px" }}>
-                        already have an account? &nbsp;  <a href='/login'> sign in </a>
+                        already have an account? &nbsp;  <p style={{ margin: "0px",cursor: "pointer", color: "blue" }} onClick={()=>navigate("/login")}> sign in </p>
                     </div>
                 </div>
 

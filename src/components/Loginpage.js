@@ -49,7 +49,7 @@ export const Loginpage = () => {
                     <input onChange={(e) => handleChange(e)} type='password' className='form-input' name='password' />
                     <button onClick={() => handleSubmit()} className='btn'>submit</button>
                     <div className='sorR'>
-                        don't have an account? &nbsp;  <p style={{ cursor: "pointer", color: "blue" }} onClick={() => navigate("/register")}> signup </p>
+                        don't have an account? &nbsp;  <p style={{ margin: "0px",cursor: "pointer", color: "blue" }} onClick={() => navigate("/register")}> signup </p>
                     </div>
                 </div>
 
