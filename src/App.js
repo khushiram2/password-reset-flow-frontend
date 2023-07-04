@@ -3,7 +3,7 @@ import { Header } from './components/Header';
 import { Loginpage } from './components/Loginpage';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { Registerpage } from './components/Registerpage';
-import {Forgotpassword} from './components/Fotgotpassword'
+import {Forgotpassword} from './components/Fotgotpassword.js'
 import {Dashboard} from "./components/Dashboard"
 import { InValidUser } from './components/InValidUser';
 import { Passwordreset } from './components/Passwordreset';
@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Header/>
       <Routes>
-       <Route path='/' element={<Navigate replace to="/login"/>}/>
+       <Route exact path='/' element={<Navigate replace to="/login"/>}/>
       <Route path='/login' element={<Loginpage/>}/>
       <Route path='/register' element={<Registerpage/>}/>
       <Route path='/forgotpassword' element={<Forgotpassword/>}/>
