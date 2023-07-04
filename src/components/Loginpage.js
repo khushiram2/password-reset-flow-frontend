@@ -44,12 +44,12 @@ export const Loginpage = () => {
                     <input onChange={(e) => handleChange(e)} type='email' className='form-input' name='email' />
                     <div>
                         <label className='form-lable' htmlFor="password">Enter your password</label>
-                        <a href='/forgotpassword'> forgot password?</a>
+                        <p style={{color:"blue"}} onClick={()=>navigate("/forgotpassword")}> forgot password?</p>
                     </div>
                     <input onChange={(e) => handleChange(e)} type='password' className='form-input' name='password' />
                     <button onClick={() => handleSubmit()} className='btn'>submit</button>
                     <div className='sorR'>
-                        don't have an account? &nbsp;  <a href='/register'> signup </a>
+                        don't have an account? &nbsp;  <p style={{color:"blue"}}  onClick={()=>navigate("/register")}> signup </p>
                     </div>
                 </div>
 
